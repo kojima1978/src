@@ -34,7 +34,7 @@ cron.schedule('0 0 * * *', async () => {
     io.emit('allSeatsUpdated', {}); // 全クライアントに通知
 }, {
     scheduled: true,
-    timezone: "Asia/Tokyo" // タイムゾーンを設定
+    timezone: "Asia/Tokyo"
 });
 
 // サーバーの起動
