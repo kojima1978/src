@@ -1,0 +1,79 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 背景を暗くしてフォーカスを高める */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 他の要素より前面に表示 */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* 角を丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ソフトなシャドウを追加 */
+    width: 300px; /* 幅を指定 */
+    max-width: 90%; /* 画面サイズによって最大幅を制限 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 要素間のギャップ */
+  }
+  
+  .modal-content h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .modal-content label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .modal-content input {
+    padding: 8px;
+    margin-top: 4px;
+    border: 2px solid #ccc;
+    border-radius: 4px; /* 入力フィールドの角を丸める */
+    transition: border-color 0.3s;
+  }
+  
+  .modal-content input:focus {
+    border-color: #0056b3; /* フォーカス時にボーダーカラーを変更 */
+  }
+  
+  .modal-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3; /* ボタンの背景色 */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-content button:hover {
+    background-color: #004494; /* ホバー時の背景色を暗く */
+  }
+  
+  .modal-content button:first-child {
+    margin-right: 10px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  
+  .modal-buttons button {
+    flex-grow: 1;
+    margin: 0 5px;
+  }
+  

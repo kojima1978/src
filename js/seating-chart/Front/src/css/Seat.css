@@ -1,0 +1,40 @@
+.seat {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+
+.seat:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%; /* 座席の下に表示 */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none; /* ドラッグアンドドロップの対象外にする */
+}
+
+.seat-id, .seat-name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+}

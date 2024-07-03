@@ -1,0 +1,11 @@
+.seating-chart {
+  display: grid;
+  grid-template-columns: repeat(8, 60px); /* 各列の幅を80pxに設定 */
+  gap: 3px; /* 座席間のギャップを設定 */
+  justify-content: center; /* 中央に配置 */
+  margin: 20px auto;
+}
+
+.seat-row {
+  display: contents;
+}
